@@ -87,6 +87,11 @@ jobs:
       - name: Check installed packages
         run: pip freeze
 
-      - name: Start Flask Server
+      # Deploy to (or Create) the Elastic Beanstalk environment
+      - name: Create test environment & deploy
         run: |
-          gunicorn --bind 0.0.0.0:5000 wsgi:app &
+          (eb use test-environment && eb status test-environment && eb deploy) || eb create test-environment
+
+      # - name: Start Flask Server
+      #   run: |
+      #     gunicorn --bind 0.0.0.0:5000 wsgi:app &
