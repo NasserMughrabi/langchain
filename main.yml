@@ -7,6 +7,10 @@ phases:
       - python3 -m pip install --upgrade pip
 
       - pip install -r requirements.txt
+
+artifacts:
+  files:
+    - '**/*'
 # # This is a basic workflow to help you get started with Actions
 
 # name: CI
