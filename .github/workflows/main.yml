@@ -56,6 +56,12 @@ jobs:
         with:
           python-version: "3.8"
 
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       # Elastic Beanstalk CLI version
       - name: Get EB CLI version
         run: |
@@ -77,12 +83,6 @@ jobs:
       - name: Create EBS application
         run: |
           eb init -p python-3.8 langchainapi --region us-east-1
-
-      - name: Check installed packages
-        run: pip freeze
-
-      - name: Install Gunicorn
-        run: python -m pip install gunicorn
 
       - name: Check installed packages
         run: pip freeze
