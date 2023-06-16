@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return "<h1>Amotions Langchain API</h1>"
 
 
 @app.route("/process", methods=["POST"])
