@@ -40,4 +40,5 @@ In this file, we build the api that trigers core.py whenever a POST HTTP request
 9. If you have installed any packages using the command '''pip install package_name''', make sure you are in the virtual environment, then run the command pip freeze -> requirements.txt. This command will update the requirements.txt for production environment
 10. You are ready to push now, commit your changes and push them to your branch. NOTE: Follow the instruction in amotions-web repo readme for how to merge and release new feature to production.
 
+
 ### If you have any question or need help, please ask in slack.
