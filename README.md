@@ -4,9 +4,9 @@
 We built a flask server that makes use of langchain framework to interact with openai. Thus, instead of directly sending HTTP requests
 to openai API, we now send requests to langchain server which forwards these requests (with langchain data) to openai API. 
 
-HTTP Request: Amotions-Web -> langchain server API -> openai API
+HTTP Request: amotions-web -> langchain server API -> openai API
 <br />
-HTTP Response: openai API -> langchain server API -> Amotions-Web
+HTTP Response: openai API -> langchain server API -> amotions-web
 
 ## How was langchain server created?
 I will break this into three parts, in each I will talk about a file in the repo.
