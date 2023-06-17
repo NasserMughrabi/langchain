@@ -1,8 +1,5 @@
 # Langchain
 
-## Why Langchain?
-
-
 ## How are we using Langchain?
 We built a flask server that makes use of langchain framework to interact with openai. Thus, instead of directly sending HTTP requests
 to openai API, we now send requests to langchain server which forwards these requests (with langchain data) to openai API. 
