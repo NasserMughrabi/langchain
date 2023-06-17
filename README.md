@@ -23,7 +23,7 @@ In this file, we build the api that trigers core.py whenever a POST HTTP request
 ## How was langchain hosted?
 1. Created a virtual environment to build the server
 2. Created a git repo and pushed it to github
-3. Created the requirements.txt file by running '''pip freeze -> requirements.txt'''. This makes sure that the production environment will have all the packages you have locally on your machine, so make sure to run this command every time you install new packages using the pip command 
+3. Created the requirements.txt file by running ```pip freeze -> requirements.txt```. This makes sure that the production environment will have all the packages you have locally on your machine, so make sure to run this command every time you install new packages using the pip command 
 4. Created YAML file and named it main.yml to inform the production environment of what commands need to be run to build the code.
 5. Created AWS codePipline and codebuild for CI/CD
 6. Created AWS Elastic Beanstalk to host the falsk server
@@ -31,13 +31,13 @@ In this file, we build the api that trigers core.py whenever a POST HTTP request
 ## Pull and Make Changes:
 1. Clone the repository 
 2. Create you own branch
-3. Create a virtual environment. I used pipenv - '''pipenv shell''' in root directory . You can use whatever you like to create your virtual env
-4. Install the requirements dependencies/packages by running '''pip install -r requirements.txt'''
+3. Create a virtual environment. I used pipenv - ```pipenv shell``` in root directory . You can use whatever you like to create your virtual env
+4. Install the requirements dependencies/packages by running ```pip install -r requirements.txt```
 5. Make changes and test locally before pushing to remote
 6. run command: python application.py
 7. Server should be running on your localhost, use the url given in the terminal to test with Postman
 8. If everything is working correctly, then you can move to the next step
-9. If you have installed any packages using the command '''pip install package_name''', make sure you are in the virtual environment, then run the command pip freeze -> requirements.txt. This command will update the requirements.txt for production environment
+9. If you have installed any packages using the command ```pip install package_name```, make sure you are in the virtual environment, then run the command pip freeze -> requirements.txt. This command will update the requirements.txt for production environment
 10. You are ready to push now, commit your changes and push them to your branch. NOTE: Follow the instruction in amotions-web repo readme for how to merge and release new feature to production.
 
 ### If you have any question or need help, please ask in slack.
